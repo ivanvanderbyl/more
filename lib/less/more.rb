@@ -14,7 +14,13 @@ rescue LoadError => e
   raise e
 end
 
-class Less::More
+# class More
+#   class Engine
+#   end
+# end
+
+class Less::More < ::Rails::Engine
+  
   DEFAULTS = {
     "production" => {
       :compression        => true,
@@ -109,7 +115,7 @@ class Less::More
     end
     
     def cache_path
-      File.join(RAILS_ROOT, 'tmp', 'less-cache')
+      File.join(Rails.root, 'tmp', 'less-cache')
     end
             
     # Generates the .css from a .less or .lss file in Less::More.source_path matching
