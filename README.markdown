@@ -1,5 +1,4 @@
-Updated for Rails 3
-===================
+*Updated for Rails 3*
 
 More
 ====
@@ -19,14 +18,6 @@ LESS
 
 LESS extends CSS with: variables, mixins, operations and nested rules. For more information, see [http://lesscss.org](http://lesscss.org).
 
-Upgrading from less-for-rails
-=======================================
-
-The old `less-for-rails` plugin looked for `.less` files in `public/stylesheets`. This plugin looks in `app/stylesheets`.
-
-To migrate, you can either set `Less::More.source_path = Rails.root + "/public/stylesheets"`, or move your `.less` files to `app/stylesheets`.
-
-
 Installation
 ============
 
@@ -39,14 +30,14 @@ Rails Plugin
 
 Use this to install as a plugin in a Ruby on Rails app:
 
-	$ script/plugin install git://github.com/cloudhead/more.git
+	$ script/plugin install git://github.com/ivanvanderbyl/more.git
 
 Rails Plugin (using git submodules)
 -----------------------------------
 
 Use this if you prefer to use git submodules for plugins:
 
-	$ git submodule add git://github.com/cloudhead/more.git vendor/plugins/more
+	$ git submodule add git://github.com/ivanvanderbyl/more.git vendor/plugins/more
 	$ script/runner vendor/plugins/more/install.rb
 
 
@@ -137,5 +128,6 @@ Contributors
 ============
 * August Lilleaas ([http://github.com/augustl](http://github.com/augustl))
 * Logan Raarup ([http://github.com/logandk](http://github.com/logandk))
+* Ivan Vanderbyl ([http://github.com/ivanvanderbyl](http://github.com/ivanvanderbyl))
 
 LESS is maintained by Alexis Sellier [http://github.com/cloudhead](http://github.com/cloudhead)
