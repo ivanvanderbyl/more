@@ -1,4 +1,5 @@
-**Updated for Rails 3**
+Updated for Rails 3
+===================
 
 More
 ====
